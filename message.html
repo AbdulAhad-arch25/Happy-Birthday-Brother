@@ -8,7 +8,8 @@ body{
  margin:0; padding:0; font-family:Poppins,sans-serif;
  background: #ff8fcf;
  height:100vh; display:flex; justify-content:center; align-items:center;
- overflow:hidden; color:white; text-align:center;
+ overflow:hidden; color:black; /* ✅ black text */
+ text-align:center;
 }
 #box{ width:90%; max-width:600px; }
 
@@ -17,8 +18,8 @@ body{
  opacity:0; 
  transform:translateY(20px);
  animation:fade 5s ease forwards;
- text-shadow:0 0 25px rgba(255,255,255,0.5);
- font-style: italic; /* ✅ italic added */
+ text-shadow:0 0 10px rgba(0,0,0,0.1);
+ font-style: italic; /* italic stays ✅ */
 }
 
 @keyframes fade{
@@ -35,7 +36,6 @@ body{
  to{ transform:translateY(110vh) rotate(360deg); }
 }
 
-/* responsive tweak */
 @media(max-width:520px){
   .line{ font-size:20px; padding:0 10px; }
 }
